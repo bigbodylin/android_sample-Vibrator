@@ -11,7 +11,7 @@
     mVibrator.vibrate(VibrationEffect
                 .createOneShot(mSimpleViberatorTime, VibrationEffect.DEFAULT_AMPLITUDE));
     
-    // vibrator with audio attribute.
+    // vibrator with audio attribute. (api >= 21)
     AudioAttributes mAudioAttributes = 
              new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM).build();
     mVibrator.vibrate(VibrationEffect
